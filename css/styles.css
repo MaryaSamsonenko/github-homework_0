@@ -31,17 +31,41 @@ html {
 }
 .list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .link {
   text-decoration: none;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 body {
   font-family: var(--primery-font);
-  font-style: normal;
+  font-style: 400;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+/*h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  background-color: lavender;
+  border: 1px solid turquoise;
+}
+
 /* =======Header=======*/
 .logo-up {
   font-family: var(--secondary-font);
@@ -89,6 +113,8 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 .modal-button {
   font-weight: 700;
@@ -97,7 +123,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+  text-align: center;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 136px;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -105,6 +137,9 @@ body {
 }
 
 /* ======Basics===== */
+.basics {
+  padding-top: 94px;
+}
 .basics-title {
   font-weight: 700;
   font-size: 14px;
@@ -123,16 +158,29 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team-img {
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--title-text-color);
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .team-profession {
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 /* ======Footer====== */
@@ -165,6 +213,7 @@ body {
   color: var(--accent-color);
 }
 /* =====Portfolio===== */
+
 .btn-filter {
   padding: 6px 22px;
   cursor: pointer;
@@ -174,11 +223,20 @@ body {
   line-height: 1.62;
   text-align: center;
   color: var(--title-text-color);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 73px;
 }
 .btn-filter:hover,
 .btn-filter:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+}
+.projects-img {
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 .projects-title {
   font-weight: 700;
@@ -186,12 +244,14 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 
 .projects-desc {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
-  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
