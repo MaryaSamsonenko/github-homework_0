@@ -196,10 +196,14 @@ img {
 
 .basics-list {
   display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.basics-item:not(:last-child) {
+.basics-item {
+  flex-basis: calc((100% - 120) / 4);
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .basics-title {
@@ -247,10 +251,14 @@ img {
 
 .team-list {
   display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.team-item:not(:last-child) {
+.team-item {
+  flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-item {
