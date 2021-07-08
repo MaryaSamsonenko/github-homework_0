@@ -659,11 +659,11 @@ img {
 .projects-overlay-text {
   position: absolute;
   display: block;
-  top: 0;
+  top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(101%);
+  /*transform: translateY(100%);*/
   transition: transform 250ms var(--timing-function);
 
   padding-right: 24px;
@@ -680,7 +680,7 @@ img {
 
 .projects-link:hover .projects-overlay-text,
 .projects-link:focus .projects-overlay-text {
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 
 /* =======Backdrop======= */
