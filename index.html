@@ -25,7 +25,22 @@
     <header class="header">
       <div class="header__line container">
         <nav class="header__nav">
-          <a lang="en" class="logo__header link" href="./"></a>
+          <a lang="en" class="logo-header link" href="./"></a>
+          <a href="./index.html" class="logo-header link"
+            ><img
+              class="logo-header__image"
+              srcset="
+                ./images/logo-header/logo-header-mobile.png  101w,
+                ./images/logo-header/logo-header-tablet.png  125w,
+                ./images/logo-header/logo-header-desktop.png 192w
+              "
+              sizes="(min-width: 1444px) 192px,
+            (min-width: 768px) 125px,
+            (min-width: 320px) 101px,
+            192px"
+              src="./images/logo-header/logo-header-desktop.png"
+              alt="Логотип компанії"
+          /></a>
           <ul class="topmenu-list list">
             <li class="topmenu-list__item">
               <a class="topmenu-list__link link current" href="./index.html">Головна</a>
@@ -59,6 +74,15 @@
             <use href="./images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
+
+        <!--======== Close-btn ========== -->
+        <div class="mobile-menu" data-menu>
+          <button class="close-btn mobile-menu__close-btn" data-menu-close>
+            <svg class="close-btn__icon" width="22px" height="22px">
+              <use href="./images/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
         <!--======== Tel-btn ========== -->
         <div class="menu-tel">
           <button
@@ -73,11 +97,15 @@
           </button>
           <div class="menu-tel-dropdown">
             <ul>
-              <li>
-                <a class="menu-tel-dropdown__item" href="tel:+380936432288">+38 (093) 643 22 88</a>
+              <li class="menu-tel-dropdown__item">
+                <a class="menu-tel-dropdown__link link" href="tel:+380936432288"
+                  >+38 (093) 643 22 88</a
+                >
               </li>
-              <li>
-                <a class="menu-tel-dropdown__item" href="tel:+380503454423">+38 (050) 345 44 23</a>
+              <li class="menu-tel-dropdown__item">
+                <a class="menu-tel-dropdown__link link" href="tel:+380503454423"
+                  >+38 (050) 345 44 23</a
+                >
               </li>
             </ul>
           </div>
@@ -95,9 +123,17 @@
           </button>
           <!-- Меню -->
           <div class="menu-lang-dropdown">
-            <a class="menu-lang-dropdown__item" href="#">UKR</a>
-            <a class="menu-lang-dropdown__item" href="#">ENG</a>
-            <a class="menu-lang-dropdown__item" href="#">RUS</a>
+            <ul>
+              <li class="menu-lang-dropdown__item">
+                <a class="menu-lang-dropdown__link link" href="#">UKR</a>
+              </li>
+              <li class="menu-lang-dropdown__item">
+                <a class="menu-lang-dropdown__link link" href="#">ENG</a>
+              </li>
+              <li class="menu-lang-dropdown__item">
+                <a class="menu-lang-dropdown__link link" href="#">RUS</a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -120,16 +156,7 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu" data-menu>
-        <button class="close-btn mobile-menu__close-btn" data-menu-close>
-          <svg class="close-btn__icon" width="22px" height="22px">
-            <use href="./images/sprite.svg#icon-menu-close"></use>
-          </svg>
-        </button>
-      </div>
     </header>
-
-    <!-- =========Hero======== -->
 
     <main></main>
   </body>
