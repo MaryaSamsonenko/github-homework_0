@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-html-css-homework/05-анимация.md
+# goit-markup-hw-08
+html-css-homework/08-адаптивность.md
